@@ -1,0 +1,131 @@
+header{
+  padding:1%;
+  background-color: white;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-left:8%;
+  margin-right:8%;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:2%;
+}
+h2{
+  padding: 1%;
+  display: inline-block;
+  font-family: Roboto;
+  align-self: center;
+}
+.searchNAddUser{
+  /* margin:3% */
+  display: inline-flex;
+  align-self: center;
+}
+.searchButton{
+  display: inline-block;
+  margin: 1px;
+  border: 1px solid wheat;
+  border-radius:10px;
+  box-shadow: 0px 1px 3px #00000029;
+  background-color: white;
+}
+#search:focus-within{
+  width: 200px;
+  border: 0px none white;
+  outline: none;
+}
+
+.btnAddUser{
+  width: 115px;
+  height: 35px;
+  background: #82A70C 0% 0% no-repeat padding-box;
+  color: white;
+  border-radius: 5px;
+  display: inline-flex;
+  margin-block-start: 3px;
+  margin-inline-start: 10px;
+  /* margin-top: 10%;
+  margin-bottom: 0%; */
+}
+.btnElements{
+  align-self: center;
+}
+.btnSearch{
+  height: 35px;
+  width: 20px;
+  border-radius: 10px;
+  border: 0px none white;
+  background-color: white;
+}
+
+body{
+  background-color:#f7f7f7;
+  margin: 0px;
+}
+
+.Department{
+  display: inline-block;
+  background: #E9FEA5 0% 0% no-repeat padding-box;
+  /* background: chocolate 0% 0% no-repeat padding-box; */
+  border-radius: 13px;
+  opacity: 1;
+  padding:2%;
+  margin:1%;
+}
+.icon{
+  color:gray;
+  cursor: pointer;
+}
+table{
+  overflow-x: auto;
+  border-collapse: collapse;
+  font: normal normal normal 14px/19px Roboto;
+}
+ td{
+  border-right: 0px none #FFFF;
+  border-left: 0px none #FFFF;
+  border-bottom: 1px solid #E3E3E3;
+  background-color: white;
+  border-collapse: collapse;
+  text-align: center;
+}
+th{
+  font:normal normal medium Roboto;
+  background-color: #42515F;
+  border-color:  #42515F;
+  color: white;
+  text-transform: uppercase;
+  border-right: 0px none #42515F;
+  border-left: 0px none #42515F;
+  border-collapse: collapse;
+  padding: 1%
+}
+@media only screen and (max-width: 600px) {
+  table{
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font: normal normal normal 14px/19px Roboto;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
+  #search:focus-within{
+    width: 100px;
+    border: 0px none white;
+    outline: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin-left:8%;
+    margin-right:0%;
+  }
+}

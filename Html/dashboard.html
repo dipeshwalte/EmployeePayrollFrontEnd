@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Css/dashboard.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header><img src="../Assets/logo.png" alt="logo" width="180px" height="45px" id="logo"></header>
+  <div class="container">
+    <div class="header">
+      <h2>Employee Details</h2>
+      <div class="searchNAddUser">
+        <div class="searchButton">
+          <button class="btnSearch" type="submit" onclick="searchDepartment()"><i class="fa fa-search"></i></button>
+          <input class="btnSearch" name="search" id="search">
+        </div>
+        <button class="btnAddUser" type="button" onclick="window.location.href='addemp.html'">
+          <i class="material-icons btnElements" style="font-size:20px">add</i><span class="btnElements">&nbsp;Add User</span> 
+        </button>
+      </div>
+    </div>
+    <table id="dashboardTable1">
+      <tr>
+        <th> </th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Start Date</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+  </div>
+  <script src="../Js/dashboard.js"></script>
+</body>
+</html>
